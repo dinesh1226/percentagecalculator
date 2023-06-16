@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AEC Percentage</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comme:wght@500&family=Outfit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+
+    <!-- NAV BAR -->
+    <div class="container">
+        <div><img class="logo" src="aditya.png" alt="adityalogo" /></div>
+        <div><h1 class="aec">ADITYA ENGINEERING COLLEGE</h1></div>
+    </div>
+
+    <!-- Heading -->
+    <h2 class="percentage">Calculate the Percentage</h2>
+    
+    <!-- The calculating area -->
+    
+    <div id="CGPA">
+      
+      <label class="din">Enter the CGPA :</label><br></br>
+      <input id="userinput" type="text">
+      <br></br>
+      <button id ="enter">Calculate</button>
+          <p id="replace-me">Percentage = </p>
+      
+    
+      <div class="content__or-text">
+        <span></span>
+        <span>OR</span>
+        <span></span>
+      </div>
+
+      <!-- Displaying Formula -->
+      <p class="message">Calculate Percentage using the formula:
+      </p>
+      <p class="message2 ">(CGPA - 0.75) * 10</p>
+  </div>
+
+  <script src="script.js"></script>
+  </body>
+</html>
