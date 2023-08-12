@@ -10,85 +10,96 @@ body{
 /* NAV bar  */
 
 .container {
-  background-color: #ccc;
+  background-color: #95d8ff;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 70px;
+  gap: 10px;
+  
 }
 
 .logo {
-  width: 80px;
-  height: 50px;
+  width: 100px;
+  height: 60px;
   margin-left: 5px;
 }
 
 .aec {
   margin-left: 10px;
-  font-size: 12px;
+  font-size: 22px;
+  color: rgb(45, 44, 44);
 }
 
 /* Heading */
 .percentage {
   color: #737373;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 30px;
 }
 
 #CGPA {
-  border-radius: 10px;
+  border-radius: 13px;
+  width: 450px;
   padding: 20px 0;
   box-sizing: border-box;
   font-family: sans-serif;
   color: #737373;
-  border: 1px solid rgb(219, 219, 219);
+  border: 1px solid lightgrey;
   text-align: center;
-  background-color: #DBDFEA;
-  margin: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .din {
-  margin: 5px 0;
+  margin: 5px auto;
+  font-size: 30px;
 }
 
 #userinput {
-  width: 60px;
-  border: none;
+  width: 100px;
+  border: 2px solid lightgrey;
   border-radius: 5px;
   text-align: center;
-  padding: 4px;
-  border-color: #DBDFEA;
+  padding: 8px;
+  /* border-color: #3c5bb1; */
   outline: none; 
+  font-size: 33px;
+  /* font-weight: 500; */
+  margin-bottom: 5px;
+  color: #737373;
 }
 
 button {
-  margin: 4px 0;
-  width: 100px;
-  padding: 4px 4px;
-  border-radius: 50px;
-  border: 0;
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-  letter-spacing: 1px;
-  /* text-transform: uppercase; */
-  font-size: 10px;
-  transition: all 0.5s ease;
+  background: #95d8ff;
+  font-family: inherit;
+  padding: 0.4em 1em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 17px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  margin-left: 0.5rem;
 }
 
 button:hover {
-  letter-spacing: 2px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
 }
 
 button:active {
-  letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
-  transform: translateY(10px);
-  transition: 100ms;
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
 }
+
+
+#replace-me {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
 
 .content__or-text {
   display: flex;
@@ -108,17 +119,51 @@ button:active {
   background-color: #737373;
 }
 
-#replace-me {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
 
 .message {
   align-items: center;
   margin: 10px 0;
-  font-size: 13px;
+  font-size: 18px;
 }
 .message2 {
   margin-top: 3px 0 0 0;
-  font-size: 13px;
+  font-size: 18px;
+}
+
+
+@media screen and (max-width:620px) {
+  .message{
+    font-size: 15px;
+  }
+  .message2{
+    font-size: 15px;
+  }
+  #replace-me {
+    font-size: 25px;
+   
+  }
+  #CGPA {
+    width: 400px;
+  }
+  .percentage {
+    font-size: 25px;
+  }
+  #userinput{
+    width: 70px;
+    font-size: 23px;
+  }
+  .din {
+    font-size: 23px;
+  }
+  .logo {
+    width: 80px;
+    height: 50px;
+  }
+  button{
+    font-size: 15px;
+  }
+  .aec {
+    font-size: 20px;
+    color: rgb(45, 44, 44);
+  }
 }
