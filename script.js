@@ -9,7 +9,7 @@ cal.addEventListener("click", function (a) {
       let c = (input.value - 0.75) * 10;
       return (document.getElementById(
         "replace-me"
-      ).innerHTML = `Percentage = <b>${c}`);
+      ).innerText = `Percentage = ${c.toFixed(1)}`);
     };
     calc(input.value);
   }
